@@ -1,10 +1,9 @@
 <?php
 class Food{
-    public $name;
-    public $price;
+    private $name;
+    private $price;
 
-    public function show_price($price){
-        $this->price = $price;
+    public function show_price(){
         echo $this->price."<br>";
     }
 
@@ -15,12 +14,11 @@ class Food{
 }
 
 class Animal{
-    public $name;
-    public $height;
-    public $weight;
+    private $name;
+    private $height;
+    private $weight;
 
-    public function show_height($height){
-        $this->height = $height;
+    public function show_height(){
         echo $this->height."<br>";
     }
 
@@ -42,10 +40,10 @@ echo"<br>";
 
 
 
-$food->show_price(250);
+$food->show_price();
 echo"<br>";
 
-$animal->show_height(60);
+$animal->show_height();
 echo"<br>";
 
 
